@@ -1,124 +1,45 @@
-/* Estilos Gerais */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FFF9F0;
-    color: #5C3A21;
-    line-height: 1.6;
-}
-
-/* Cabeçalho */
-.header {
-    background: #E74C3C;
-    background: linear-gradient(135deg, #E74C3C, #C0392B);
-    color: white;
-    text-align: center;
-    padding: 3rem 0;
-    margin-bottom: 2rem;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-}
-
-.header p {
-    margin: 0.5rem 0 0;
-    font-size: 1.2rem;
-}
-
-/* Container Principal */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.container h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #E74C3C;
-}
-
-.subtitle {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #7F8C8D;
-}
-
-/* Galeria de Imagens */
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-    margin: 2rem 0;
-}
-
-.image-card {
-    width: 300px;
+/* Estilos para a página de Informações */
+.info-section {
     background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.info-card {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed #E74C3C;
+}
+
+.info-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.info-card h3 {
+    color: #E74C3C;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.map {
+    margin-top: 1rem;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
 }
 
-.image-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+ul {
+    padding-left: 1.5rem;
 }
 
-.image-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 3px solid #E74C3C;
-}
-
-.image-info {
-    padding: 1rem;
-    text-align: center;
-}
-
-.image-info h3 {
-    margin: 0 0 0.5rem;
-    color: #E74C3C;
-}
-
-.image-info p {
-    margin: 0;
-    color: #7F8C8D;
-    font-size: 0.9rem;
-}
-
-/* Rodapé */
-.footer {
-    background: #5C3A21;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
-}
-
-.footer p {
-    margin: 0.5rem 0;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    .header {
-        padding: 2rem 0;
-    }
-    
-    .header h1 {
-        font-size: 2rem;
-    }
-    
-    .image-card {
-        width: 100%;
-        max-width: 400px;
-    }
+ul li {
+    margin-bottom: 0.5rem;
 }
